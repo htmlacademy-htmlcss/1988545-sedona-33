@@ -3,10 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <div class="header__menu-inner">
+            <a class="header__logo" href="#">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-list-item">
+                  <a class="header__menu-list-link" href="#">Главная</a>
+                </li>
+                <li class="header__menu-list-item">
+                  <a class="header__menu-list-link" href="#">О Седоне</a>
+                </li>
+                <li class="header__menu-list-item">
+                  <a class="header__menu-list-link" href="#">Гостиницы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btn-inner">
+            <button class="header__btn-search">
+              <img src="images/icons/search.svg" alt="search-icon">
+            </button>
+            <button class="header__btn-favorite">
+              <img src="images/icons/favorite.svg" alt="favorite-icon">
+            </button>
+            <button class="header__btn-want">Хочу сюда!</button>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
