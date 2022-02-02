@@ -101,10 +101,13 @@ main{
     color: #333333;
 }
 
+.active--page{
+    border-bottom: 2px solid #756257;
+}
 
 /* styles */
 
-.header_inner{
+.header__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,23 +132,67 @@ main{
 }
 
 .header__menu-list-item{
+    padding: 20px 0;
     margin-right: 34px;
+    transition: 0.2s;
 }
 
-.header__btn-inner{
+.header__menu-list-link{
+    transition: 0.2s;
+}
+
+.header__menu-list-link:hover{
+    color: #756257;
+}
+
+.header__menu-list-link:active{
+    color: #756257;
+    opacity: 0.3;
+}
+
+.header__btns-inner{
     display: flex;
     align-items: center;
 }
 
-.header__btn-search{
+.header__btns-search{
     margin-right: 23px;
+    transition: 0.2s;
 }
 
-.header__btn-favorite{
+.header__btns-favorite{
     margin-right: 32px;
+    position: relative;
+    transition: 0.2s;
 }
 
-.header__btn-want{
+.header__btns-favorite-curcle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: #7DB550;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 13px;
+    color: #fff;
+}
+
+.header__btns-search:hover,
+.header__btns-favorite:hover{
+    opacity: 0.6;
+}
+
+.header__btns-search:active,
+.header__btns-favorite:active{
+    opacity: 0.2;
+}
+
+.header__btns-want{
     font-family: PT Sans;
     color: #fff;
     font-weight: bold;
@@ -156,6 +203,28 @@ main{
     width: 160px;
     height: 37px;
     border-radius: 4px;
+    transition: 0.2s;
+}
+
+.header__btns-want:hover{
+    background: #615048;
+}
+
+.header__btns-want:focus{
+    outline: 3px solid #83B3D3;
+}
+
+.header__btns-want:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
 }
 
 .welcome{
@@ -326,6 +395,20 @@ main{
     line-height: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.2s;
+}
+
+.search__button:hover{
+    background: #615048;
+}
+
+.search__button:focus{
+    outline: 3px solid #83B3D3;
+}
+
+.search__button:active{
+    color: rgba(255, 255, 255, 0.3);
+    background: #615048;
 }
 
 .subscription{
@@ -360,6 +443,7 @@ main{
     border-radius: 10px 0px 0px 10px;
     padding: 0 22px;
     color: #000000;
+    transition: 0.2s;
 }
 
 .subscription__form-input::placeholder{
@@ -368,6 +452,19 @@ main{
     line-height: 26px;  
     color: #000000;
     opacity: 0.6;
+}
+
+.subscription__form-input:hover{
+    background: #E6E6E6;
+}
+
+.subscription__form-input:focus{
+    outline: 3px solid #83B3D3;
+}
+
+.subscription__form-input:invalid{
+    background: #FFFFFF;
+    outline: 2px solid #FF5757;
 }
 
 .subscription__form-button{
@@ -381,14 +478,27 @@ main{
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
+    transition: 0.2s;
 }
 
-.footer{
+.subscription__form-button:hover{
+    background: #68A2CA;
+}
+
+.subscription__form-button:focus{
+    outline: 3px solid #756257;;
+}
+
+.subscription__form-button:active{
+    color: rgba(255, 255, 255, 0.3);
+    background: #68A2CA;
+}
+
+.footer__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    padding: 0 72px;
 }
 
 .footer__social{
@@ -397,7 +507,53 @@ main{
     width: 107px;
 }
 
+.footer__social-img{
+    transition: 0.2s;
+}
+
+.footer__social-img:hover{
+    filter: brightness(85%);
+}
+
+/* .footer__social-li:focus{
+    outline: 3px solid #83B3D3;
+} */
+
+.footer__social-img:active{
+    opacity: 0.3;
+}
+
 .footer__telephone{
     font-size: 40px;
     line-height: 40px;
+    transition: 0.2s;
+}
+
+.footer__telephone:hover{
+    color: #756257;
+}
+
+.footer__telephone:focus{
+    border: 3px solid #83B3D3;;
+}
+
+.footer__telephone:active{
+    color: #756257;
+    opacity: 0.3;
+}
+
+.footer__academy{
+    transition: 0.2s;
+}
+
+/* .footer__academy:hover{
+
+} */
+
+/* .footer__academy:focus{
+
+} */
+
+.footer__academy:active{
+    opacity: 0.3;
 }
