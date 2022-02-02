@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <base href="https://htmlacademy-htmlcss.github.io/1988545-sedona-33/1/">
+</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__menu-inner">
+            <a class="header__logo" href="#">
+              <h1 class="visually-hidden">Официальный сайт города Седона</h1>
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-list-item active--page">
+                  <a class="header__menu-list-link" href="#">Главная</a>
+                </li>
+                <li class="header__menu-list-item">
+                  <a class="header__menu-list-link" href="#">О Седоне</a>
+                </li>
+                <li class="header__menu-list-item">
+                  <a class="header__menu-list-link" href="#">Гостиницы</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__btns-inner">
+            <button class="header__btns-search">
+              <img src="images/icons/search.svg" alt="search-icon">
+            </button>
+            <button class="header__btns-favorite">
+              <img src="images/icons/favorite.svg" alt="favorite-icon">
+              <span class="header__btns-favorite-curcle">12</span>
+            </button>
+            <button class="header__btns-want">Хочу сюда!</button>
+          </div>
+        </div>
+  <!-- <div class="modal-window">
+          <div class="modal-window__inner">
+
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <main>
+      <section class="welcome">
+        <img class="welcome__top" src="images/welcome.svg" alt="welcome">
+        <img class="welcome__sedona" src="images/Sedona.svg" alt="sedona">
+        <img class="welcome__becouse" src="images/because.svg" alt="because">
+      </section>
+      <section class="reasons">
+        <h2 class="title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p class="reasons__subtitle">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+        </p>
+        <ul class="reasons__inner">
+          <li class="reasons__item color--deep-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title color--deep-blue">
+                Настоящий городок
+              </h3>
+              <span class="reasons__item-number">— №1 —</span>
+              <p class="reasons__item-subtitle">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <img class="reasons__item-img" src="images/content/photo-1.png" alt="open-range">
+          </li>
+          <li class="reasons__item color--light-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title house--icon">
+                Жильё
+              </h3>
+              <p class="reasons__item-subtitle">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title food--icon">
+                Еда
+              </h3>
+              <p class="reasons__item-subtitle">
+                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item color--light-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title gift--icon">
+                Сувениры
+              </h3>
+              <p class="reasons__item-subtitle">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item">
+            <img class="reasons__item-img" src="images/content/photo-2.png" alt="canyon">
+          </li>
+          <li class="reasons__item color--deep-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title color--deep-blue">
+                Там есть мост дьявола
+              </h3>
+              <span class="reasons__item-number">— №2 —</span>
+              <p class="reasons__item-subtitle">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item color--light-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title">
+                Небольшая <br>
+                площадь
+              </h3>
+              <span class="reasons__item-number">— №3 —</span>
+              <p class="reasons__item-subtitle">
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item color--middle-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title">
+                Красивая <br> 
+                дорога
+              </h3>
+              <span class="reasons__item-number">— №4 —</span>
+              <p class="reasons__item-subtitle">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
+          </li>
+          <li class="reasons__item color--light-blue">
+            <div class="reasons__item-wrapper">
+              <h3 class="reasons__item-title">
+                Мало <br> 
+                туристов
+              </h3>
+              <span class="reasons__item-number">— №5 —</span>
+              <p class="reasons__item-subtitle">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="title">
+          Заинтересовались?
+        </h2>
+        <p class="subtitle">
+          Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a class="search__button" href="#">
+          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+        </a>
+      </section>
+      <section class="subscription">
+        <h2 class="title">
+          Подпишитесь на рассылку
+        </h2>
+        <p class="subtitle">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="subscription__form" action="#">
+          <input class="subscription__form-input"  type="text" placeholder="Ваш e-mail">
+          <input class="subscription__form-button" type="submit" value="Подписаться">
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__social">
+            <li class="footer__social-li">
+              <a class="footer__social-item" href="https://twitter.com/htmlacademy_ru">
+                <img class="footer__social-img" src="images/icons/twitter.svg" alt="twitter-icon">
+              </a>
+            </li>
+            <li class="footer__social-li">
+              <a class="footer__social-item" href="https://www.facebook.com/htmlacademy">
+                <img class="footer__social-img" src="images/icons/facebook.svg" alt="facebook-icon">
+              </a>
+            </li>
+            <li class="footer__social-li">
+              <a class="footer__social-item" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <img class="footer__social-img" src="images/icons/youtube.svg" alt="youtube-icon">
+              </a>
+            </li>
+          </ul>
+          <address class="footer__telephone">
+            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <a class="footer__academy" href="https://htmlacademy.ru/" tabindex="5">
+            <img class="footer__academy-img" src="images/icons/logo_htmlacademy.svg" alt="htmlacademy-logo">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
