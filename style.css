@@ -157,13 +157,16 @@ main{
 
 .header__btns-search{
     margin-right: 23px;
+    margin-bottom: -5px;
     transition: 0.2s;
 }
 
 .header__btns-favorite{
     margin-right: 32px;
+    margin-bottom: -5px;
     position: relative;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .header__btns-favorite-curcle{
@@ -182,14 +185,21 @@ main{
     color: #fff;
 }
 
-.header__btns-search:hover,
-.header__btns-favorite:hover{
-    opacity: 0.6;
+#header__search-btn,
+#header__favorite-btn{
+    transition: 0.2s;
 }
 
-.header__btns-search:active,
-.header__btns-favorite:active{
-    opacity: 0.2;
+#header__search-btn:hover,
+#header__favorite-btn:hover{
+    fill: #756257;
+}
+
+.header__btns-favorite:active,
+#header__search-btn:active,
+#header__favorite-btn:active{
+    fill: #756257;
+    opacity: 0.3;
 }
 
 .header__btns-want{
