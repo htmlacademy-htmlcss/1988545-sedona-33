@@ -239,23 +239,13 @@ main{
 
 .welcome{
     padding: 51px 0 83px;
-    background-image: url(../Sedona/images/background.png);
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
 }
 
-.welcome__top,
-.welcome__sedona,
-.welcome__becouse {
+.welcome__img{
     margin: 0 auto;
-}
-
-.welcome__top{
-    margin-bottom: 53px;
-}
-
-.welcome__sedona {
-    margin-bottom: 55px;
 }
 
 .reasons{
@@ -332,15 +322,15 @@ main{
     object-fit: cover;
 }
 
-.house--icon,
-.food--icon,
-.gift--icon{
+.reasons__item--house,
+.reasons__item--food,
+.reasons__item--gift{
     margin-bottom: 20px;
 }
 
-.house--icon::before,
-.food--icon::before,
-.gift--icon::before{
+.reasons__item--house::before,
+.reasons__item--food::before,
+.reasons__item--gift::before{
     content: '';
     display: block;
     margin: 0 auto 23px;
@@ -348,34 +338,34 @@ main{
     height: 75px;
 }
 
-.house--icon::before{
-    background-image: url(../Sedona/images/icons/house.svg);
+.reasons__item--house::before{
+    background-image: url(../images/icons/house.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.food--icon::before{
-    background-image: url(../Sedona/images/icons/food.svg);
+.reasons__item--food::before{
+    background-image: url(../images/icons/food.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.gift--icon::before{
-    background-image: url(../Sedona/images/icons/gift.svg);
+.reasons__item--gift::before{
+    background-image: url(../images/icons/gift.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.color--deep-blue{
+.reasons__item--deep-blue{
     background-color: #83B3D3;
     color: #fff !important;
 }
 
-.color--middle-blue{
+.reasons__item--middle-blue{
     background: rgba(131, 179, 211, 0.2);
 }
 
-.color--light-blue{
+.reasons__item--light-blue{
     background: rgba(131, 179, 211, 0.12);
 }
 
@@ -423,7 +413,7 @@ main{
 
 .subscription{
     padding: 94px 0 93px;
-    background-image: url(../Sedona/images/subscription.png);
+    background-image: url(../images/subscription.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
