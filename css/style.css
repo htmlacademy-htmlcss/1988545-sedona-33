@@ -27,7 +27,6 @@ body{
     margin: 0;
 }
 
-
 img {
     max-width: 100%;
     object-fit: contain;
@@ -162,19 +161,19 @@ main{
     color: #fff;
 }
 
-#header__search-btn,
-#header__favorite-btn{
+.header__search-btn,
+.header__favorite-btn{
     transition: 0.2s;
 }
 
-#header__search-btn:hover,
-#header__favorite-btn:hover{
+.header__search-btn:hover,
+.header__favorite-btn:hover{
     fill: #756257;
 }
 
 .header__btns-favorite:active,
-#header__search-btn:active,
-#header__favorite-btn:active{
+.header__search-btn:active,
+.header__favorite-btn:active{
     fill: #756257;
     opacity: 0.3;
 }
@@ -494,15 +493,15 @@ main{
     list-style: none;
 }
 
-#footer__social-twetter,
-#footer__social-facebook,
-#footer__social-youtube{
+.footer__social-twetter,
+.footer__social-facebook,
+.footer__social-youtube{
     transition: 0.2s;
 } 
 
-#footer__social-twetter:hover,
-#footer__social-facebook:hover,
-#footer__social-youtube:hover{
+.footer__social-twetter:hover,
+.footer__social-facebook:hover,
+.footer__social-youtube:hover{
     fill: #68A2CA;
 }
 
@@ -520,9 +519,9 @@ main{
     outline: 3px solid #83B3D3;
 }
 
-#footer__social-twetter:active,
-#footer__social-facebook:active,
-#footer__social-youtube:active{
+.footer__social-twetter:active,
+.footer__social-facebook:active,
+.footer__social-youtube:active{
     fill: #68A2CA;
     opacity: 0.3;
 }
@@ -568,7 +567,7 @@ main{
     transition: 0.2s;
 }
 
-#footer__academy-logo:hover{
+.footer__academy-logo:hover{
     fill: #756257;
 }
 
@@ -577,7 +576,7 @@ main{
     outline: 3px solid #83B3D3;
 }
 
-#footer__academy-logo:active{
+.footer__academy-logo:active{
     fill: #756257;
     opacity: 0.3;
 }
