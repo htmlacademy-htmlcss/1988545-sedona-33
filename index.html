@@ -43,11 +43,6 @@
               <button class="header__btn">Хочу сюда!</button>
             </div>
           </div>
-    <!-- <div class="modal-window">
-            <div class="modal-window__inner">
-  
-            </div>
-          </div> -->
         </div>
       </header>
       <main class="main-page">
@@ -237,5 +232,44 @@
         </div>
       </footer>
     </div>
+    <div class="modal">
+      <div class="modal__inner">
+        <h3 class="modal__title">
+          Поиск гостиницы в Седоне
+        </h3>
+        <button class="modal__close-button">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <div class="modal__item">
+            <label class="modal__item-title" for="in-date">Дата заезда:</label>
+            <input class="modal__item-date" type="date" id="in-date" value="2020-04-27" min="2020-04-27" title="Мы не можем отправить вас в прошлое.">
+            <p class="modal__item-date-subtitle modal__item--warning">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <label class="modal__item">
+            <label class="modal__item-title" for="out-date">Дата выезда:</label>
+            <input class="modal__item-date" type="date" id="out-date" value="2020-09-01" min="2020-04-27">
+            <p class="modal__item-date-subtitle">На эти даты есть свободные номера. Пока есть.</p>
+          </label>
+          <div class="modal__family">
+            <div class="modal__adult-item">
+              <label class="modal__family-title">Взрослые:</label>
+              <input class="modal__family-number" type="number" value="2">
+            </div>
+            <div class="modal__children-item">
+              <label class="modal__family-title">Дети:</label>
+              <p class="modal__family-info">
+                i
+              </p>
+              <input class="modal__family-number" type="number" value="1">
+            </div>
+          </div>
+          <button class="modal__button">Найти</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
