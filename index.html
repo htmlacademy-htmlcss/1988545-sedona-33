@@ -6,235 +6,270 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__menu-inner">
-            <h1 class="visually-hidden">Официальный сайт города Седона</h1>
-            <a class="header__logo" href="#">
-              <img src="images/logo.svg" alt="logo" width="139px" height="70px">
-            </a>
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-list-item">
-                  <a class="header__menu-list-link" href="#">Главная</a>
-                  <span class="active-page"></span>
-                </li>
-                <li class="header__menu-list-item">
-                  <a class="header__menu-list-link" href="#">О Седоне</a>
-                </li>
-                <li class="header__menu-list-item">
-                  <a class="header__menu-list-link" href="#">Гостиницы</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header__btns-inner">
-            <a class="header__btns-search" href="#">
-              <svg class="header__search-btn" fill="#000" width="20" height="20">
-                <path d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"/>
-              </svg>                
-            </a>
-            <a class="header__btns-favorite">
-              <svg class="header__favorite-btn" fill="#000" width="20" height="20">
-                <path d="M9.58207 17.4114C9.28207 17.4114 8.98207 17.3114 8.78207 17.0114C3.38207 10.9114 2.08207 9.51142 1.78207 9.11142C1.08207 8.21142 0.682068 7.01142 0.682068 5.81142C0.682068 2.81142 3.08207 0.411423 6.18207 0.411423C7.48207 0.411423 8.68207 0.911423 9.68207 1.71142C10.6821 0.911423 11.9821 0.411423 13.1821 0.411423C16.1821 0.411423 18.6821 2.81142 18.6821 5.81142C18.6821 7.11142 18.1821 8.31142 17.3821 9.21142L10.3821 17.1114C10.1821 17.3114 9.98207 17.4114 9.58207 17.4114ZM3.58207 7.91142C3.88207 8.31142 7.08207 11.9114 9.68207 14.8114L15.8821 7.81142C16.3821 7.31142 16.5821 6.61142 16.5821 5.81142C16.5821 4.01142 15.0821 2.51142 13.2821 2.51142C12.2821 2.51142 11.2821 3.01142 10.5821 3.81142C10.2821 4.11142 9.98207 4.21142 9.68207 4.21142C9.38207 4.21142 9.08207 4.01142 8.88207 3.81142C8.18207 3.01142 7.18207 2.51142 6.18207 2.51142C4.38207 2.51142 2.88207 4.01142 2.88207 5.81142C2.78207 6.71142 3.18207 7.41142 3.58207 7.91142C3.48207 7.91142 3.48207 7.91142 3.58207 7.91142Z"/>
-              </svg>                
-              <span class="header__btns-favorite-curcle">12</span>
-            </a>
-            <button class="header__btns-want">Хочу сюда!</button>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__menu-inner">
+              <h1 class="visually-hidden">Официальный сайт города Седона</h1>
+              <a class="header__logo" href="#">
+                <img src="images/logo.svg" alt="logo" width="139px" height="70px">
+              </a>
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-list-item">
+                    <a class="header__menu-list-link active--page" href="#">Главная</a>
+                  </li>
+                  <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="#">О Седоне</a>
+                  </li>
+                  <li class="header__menu-list-item">
+                    <a class="header__menu-list-link" href="catalog.html">Гостиницы</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__btns-inner">
+              <a class="header__btns-search" href="#">
+                <svg class="header__search-btn" fill="#000" width="20" height="20">
+                  <path d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"/>
+                </svg>                
+              </a>
+              <a class="header__btns-favorite">
+                <svg class="header__favorite-btn" fill="#000" width="20" height="20">
+                  <path d="M9.58207 17.4114C9.28207 17.4114 8.98207 17.3114 8.78207 17.0114C3.38207 10.9114 2.08207 9.51142 1.78207 9.11142C1.08207 8.21142 0.682068 7.01142 0.682068 5.81142C0.682068 2.81142 3.08207 0.411423 6.18207 0.411423C7.48207 0.411423 8.68207 0.911423 9.68207 1.71142C10.6821 0.911423 11.9821 0.411423 13.1821 0.411423C16.1821 0.411423 18.6821 2.81142 18.6821 5.81142C18.6821 7.11142 18.1821 8.31142 17.3821 9.21142L10.3821 17.1114C10.1821 17.3114 9.98207 17.4114 9.58207 17.4114ZM3.58207 7.91142C3.88207 8.31142 7.08207 11.9114 9.68207 14.8114L15.8821 7.81142C16.3821 7.31142 16.5821 6.61142 16.5821 5.81142C16.5821 4.01142 15.0821 2.51142 13.2821 2.51142C12.2821 2.51142 11.2821 3.01142 10.5821 3.81142C10.2821 4.11142 9.98207 4.21142 9.68207 4.21142C9.38207 4.21142 9.08207 4.01142 8.88207 3.81142C8.18207 3.01142 7.18207 2.51142 6.18207 2.51142C4.38207 2.51142 2.88207 4.01142 2.88207 5.81142C2.78207 6.71142 3.18207 7.41142 3.58207 7.91142C3.48207 7.91142 3.48207 7.91142 3.58207 7.91142Z"/>
+                </svg>                
+                <span class="header__btns-favorite-curcle">12</span>
+              </a>
+              <button class="header__btn">Хочу сюда!</button>
+            </div>
           </div>
         </div>
-  <!-- <div class="modal-window">
-          <div class="modal-window__inner">
-
-          </div>
-        </div> -->
-      </div>
-    </header>
-    <main>
-      <section class="welcome">
-        <img class="welcome__img" src="images/welcome-page.svg" alt="welcome-img" width="458px" height="352px">
-      </section>
-      <section class="reasons">
-        <h2 class="title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p class="reasons__subtitle">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-        </p>
-        <ul class="reasons__inner">
-          <li class="reasons__item reasons__item--deep-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title reasons__item--deep-blue">
-                Настоящий городок
-              </h3>
-              <span class="reasons__item-number">— №1 —</span>
-              <p class="reasons__item-subtitle">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <img class="reasons__item-img" src="images/content/photo-1.jpg" alt="open-range" width="800px" height="384px">
-          </li>
-          <li class="reasons__item reasons__item--light-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title reasons__item--house">
-                Жильё
-              </h3>
-              <p class="reasons__item-subtitle">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title reasons__item--food">
-                Еда
-              </h3>
-              <p class="reasons__item-subtitle">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item reasons__item--light-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title reasons__item--gift">
-                Сувениры
-              </h3>
-              <p class="reasons__item-subtitle">
-                Не только китайского, но и настоящего местного производства!
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item">
-            <img class="reasons__item-img" src="images/content/photo-2.jpg" alt="canyon" width="800px" height="384px">
-          </li>
-          <li class="reasons__item reasons__item--deep-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title reasons__item--deep-blue">
-                Там есть мост дьявола
-              </h3>
-              <span class="reasons__item-number">— №2 —</span>
-              <p class="reasons__item-subtitle">
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item reasons__item--light-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title">
-                Небольшая <br>
-                площадь
-              </h3>
-              <span class="reasons__item-number">— №3 —</span>
-              <p class="reasons__item-subtitle">
-                Все достопримечательности находятся очень близко
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item reasons__item--middle-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title">
-                Красивая <br> 
-                дорога
-              </h3>
-              <span class="reasons__item-number">— №4 —</span>
-              <p class="reasons__item-subtitle">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
-            </div>
-          </li>
-          <li class="reasons__item reasons__item--light-blue">
-            <div class="reasons__item-wrapper">
-              <h3 class="reasons__item-title">
-                Мало <br> 
-                туристов
-              </h3>
-              <span class="reasons__item-number">— №5 —</span>
-              <p class="reasons__item-subtitle">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="search">
-        <h2 class="title">
-          Заинтересовались?
-        </h2>
-        <p class="subtitle">
-          Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-        <a class="search__button" href="#">
-          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-        </a>
-      </section>
-      <section class="subscription">
-        <h2 class="title">
-          Подпишитесь на рассылку
-        </h2>
-        <p class="subtitle">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <form class="subscription__form" action="#">
-          <input class="subscription__form-input"  type="text" placeholder="Ваш e-mail">
-          <button class="subscription__form-button" type="submit">Подписаться</button>
-        </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <ul class="footer__social">
-            <li class="footer__social-li">
-              <a class="footer__social-item" href="https://twitter.com/htmlacademy_ru">
-                <svg class="footer__social-twetter" width="18" height="15" fill="#83B3D3">
-                  <g clip-path="url(#clip0_18711_1512)">
-                    <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
-                  </g>
-                  <defs><clipPath id="clip0_18711_1512"><rect width="18" height="15" fill="white"/></clipPath></defs>
-                </svg>
-              </a>
+      </header>
+      <main class="main-page">
+        <section class="welcome">
+          <img class="welcome__img" src="images/welcome-page.svg" alt="welcome-img" width="458px" height="352px">
+        </section>
+        <section class="reasons">
+          <h3 class="title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h3>
+          <p class="reasons__subtitle">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+          <ul class="reasons__inner">
+            <li class="reasons__item reasons__item--deep-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title reasons__item--deep-blue">
+                  Настоящий городок
+                </h3>
+                <span class="reasons__item-number">— №1 —</span>
+                <p class="reasons__item-subtitle">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
             </li>
-            <li class="footer__social-li">
-              <a class="footer__social-item" href="https://www.facebook.com/htmlacademy">
-                <svg class="footer__social-facebook" width="10" height="18" fill="#83B3D3">
-                  <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
-                </svg>                  
-              </a>
+            <li class="reasons__item">
+              <img class="reasons__item-img" src="images/content/photo-1.jpg" alt="open-range" width="800px" height="384px">
             </li>
-            <li class="footer__social-li">
-              <a class="footer__social-item" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg class="footer__social-youtube" width="20" height="16" fill="#83B3D3">
-                  <g clip-path="url(#clip0_18711_1528)">
-                    <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
-                  </g>
-                  <defs><clipPath id="clip0_18711_1528"><rect width="20" height="16" fill="white"/></clipPath></defs>
-                </svg>                  
-              </a>
+            <li class="reasons__item reasons__item--light-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title reasons__item--house">
+                  Жильё
+                </h3>
+                <p class="reasons__item-subtitle">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title reasons__item--food">
+                  Еда
+                </h3>
+                <p class="reasons__item-subtitle">
+                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item reasons__item--light-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title reasons__item--gift">
+                  Сувениры
+                </h3>
+                <p class="reasons__item-subtitle">
+                  Не только китайского, но и настоящего местного производства!
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item">
+              <img class="reasons__item-img" src="images/content/photo-2.jpg" alt="canyon" width="800px" height="384px">
+            </li>
+            <li class="reasons__item reasons__item--deep-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title reasons__item--deep-blue">
+                  Там есть мост дьявола
+                </h3>
+                <span class="reasons__item-number">— №2 —</span>
+                <p class="reasons__item-subtitle">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item reasons__item--light-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title">
+                  Небольшая <br>
+                  площадь
+                </h3>
+                <span class="reasons__item-number">— №3 —</span>
+                <p class="reasons__item-subtitle">
+                  Все достопримечательности находятся очень близко
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item reasons__item--middle-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title">
+                  Красивая <br> 
+                  дорога
+                </h3>
+                <span class="reasons__item-number">— №4 —</span>
+                <p class="reasons__item-subtitle">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </p>
+              </div>
+            </li>
+            <li class="reasons__item reasons__item--light-blue">
+              <div class="reasons__item-wrapper">
+                <h3 class="reasons__item-title">
+                  Мало <br> 
+                  туристов
+                </h3>
+                <span class="reasons__item-number">— №5 —</span>
+                <p class="reasons__item-subtitle">
+                  Большинство едет в Гранд Каньон и толпится там
+                </p>
+              </div>
             </li>
           </ul>
-          <address class="footer__telephone">
-            <a class="footer__telephone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-          <a class="footer__academy" href="https://htmlacademy.ru/">
-            <svg class="footer__academy-logo" width="115" height="34" fill="#000">
-                <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
-                <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"/>
-                <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
-                <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"/>
-                <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"/>
-                <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"/>
-                <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"/>
-                <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"/>
-                <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"/>
-                <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"/>
-                <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"/>
-                <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"/>
-            </svg>              
+        </section>
+        <section class="search">
+          <h3 class="title">
+            Заинтересовались?
+          </h3>
+          <p class="subtitle">
+            Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="search__button" href="#">
+            ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
           </a>
+        </section>
+        <section class="subscription">
+          <h3 class="title">
+            Подпишитесь на рассылку
+          </h3>
+          <p class="subtitle">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscription__form" action="#">
+            <input class="subscription__form-input"  type="text" placeholder="Ваш e-mail">
+            <button class="subscription__form-button" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <ul class="footer__social">
+              <li class="footer__social-li">
+                <a class="footer__social-item" href="https://twitter.com/htmlacademy_ru">
+                  <svg class="footer__social-twetter" width="18" height="15" fill="#83B3D3">
+                    <g clip-path="url(#clip0_18711_1512)">
+                      <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
+                    </g>
+                    <defs><clipPath id="clip0_18711_1512"><rect width="18" height="15" fill="white"/></clipPath></defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-li">
+                <a class="footer__social-item" href="https://www.facebook.com/htmlacademy">
+                  <svg class="footer__social-facebook" width="10" height="18" fill="#83B3D3">
+                    <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
+                  </svg>                  
+                </a>
+              </li>
+              <li class="footer__social-li">
+                <a class="footer__social-item" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                  <svg class="footer__social-youtube" width="20" height="16" fill="#83B3D3">
+                    <g clip-path="url(#clip0_18711_1528)">
+                      <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
+                    </g>
+                    <defs><clipPath id="clip0_18711_1528"><rect width="20" height="16" fill="white"/></clipPath></defs>
+                  </svg>                  
+                </a>
+              </li>
+            </ul>
+            <address class="footer__telephone">
+              <a class="footer__telephone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+            <a class="footer__academy" href="https://htmlacademy.ru/">
+              <svg class="footer__academy-logo" width="115" height="34" fill="#000">
+                  <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
+                  <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z"/>
+                  <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
+                  <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z"/>
+                  <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"/>
+                  <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z"/>
+                  <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z"/>
+                  <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z"/>
+                  <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z"/>
+                  <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z"/>
+                  <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z"/>
+                  <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"/>
+              </svg>              
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__inner">
+        <h3 class="modal__title">
+          Поиск гостиницы в Седоне
+        </h3>
+        <button class="modal__close-button">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <div class="modal__item">
+            <label class="modal__item-title" for="in-date">Дата заезда:</label>
+            <input class="modal__item-date" type="date" id="in-date" value="2020-04-27" min="2020-04-27" title="Мы не можем отправить вас в прошлое.">
+            <p class="modal__item-date-subtitle modal__item--warning">Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <label class="modal__item">
+            <label class="modal__item-title" for="out-date">Дата выезда:</label>
+            <input class="modal__item-date" type="date" id="out-date" value="2020-09-01" min="2020-04-27">
+            <p class="modal__item-date-subtitle">На эти даты есть свободные номера. Пока есть.</p>
+          </label>
+          <div class="modal__family">
+            <div class="modal__adult-item">
+              <label class="modal__family-title">Взрослые:</label>
+              <input class="modal__family-number" type="number" value="2">
+            </div>
+            <div class="modal__children-item">
+              <label class="modal__family-title">Дети:</label>
+              <p class="modal__family-info">
+                i
+              </p>
+              <input class="modal__family-number" type="number" value="1">
+            </div>
+          </div>
+          <button class="modal__button">Найти</button>
         </div>
       </div>
-    </footer>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
