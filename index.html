@@ -58,8 +58,8 @@
           <p class="reasons__subtitle">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
-          <ul class="reasons__inner">
-            <li class="reasons__item reasons__item--deep-blue">
+          <article class="reasons__real">
+            <div class="reasons__item reasons__item--deep-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title reasons__item--deep-blue">
                   Настоящий городок
@@ -69,11 +69,13 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-            </li>
-            <li class="reasons__item">
+            </div>
+            <div class="reasons__item">
               <img class="reasons__item-img" src="images/content/photo-1.jpg" alt="open-range" width="800px" height="384px">
-            </li>
-            <li class="reasons__item reasons__item--light-blue">
+            </div>
+          </article>
+          <article class="reasons__icons">
+            <div class="reasons__item reasons__item--light-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title reasons__item--house">
                   Жильё
@@ -82,8 +84,8 @@
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </div>
-            </li>
-            <li class="reasons__item">
+            </div>
+            <div class="reasons__item">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title reasons__item--food">
                   Еда
@@ -92,8 +94,8 @@
                   Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--light-blue">
+            </div>
+            <div class="reasons__item reasons__item--light-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title reasons__item--gift">
                   Сувениры
@@ -102,22 +104,26 @@
                   Не только китайского, но и настоящего местного производства!
                 </p>
               </div>
-            </li>
-            <li class="reasons__item">
+            </div>
+          </article>
+          <article class="reasons__devil">
+            <div class="reasons__item">
               <img class="reasons__item-img" src="images/content/photo-2.jpg" alt="canyon" width="800px" height="384px">
-            </li>
-            <li class="reasons__item reasons__item--deep-blue">
+            </div>
+            <div class="reasons__item reasons__item--deep-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title reasons__item--deep-blue">
-                  Там есть мост дьявола
+                  Там есть <br> мост дьявола
                 </h3>
                 <span class="reasons__item-number">— №2 —</span>
                 <p class="reasons__item-subtitle">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--light-blue">
+            </div>
+          </article>
+          <article class="reasons__numbers">
+            <div class="reasons__item reasons__item--light-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title">
                   Небольшая <br>
@@ -128,8 +134,8 @@
                   Все достопримечательности находятся очень близко
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--middle-blue">
+            </div>
+            <div class="reasons__item reasons__item--middle-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title">
                   Красивая <br> 
@@ -140,8 +146,8 @@
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--light-blue">
+            </div>
+            <div class="reasons__item reasons__item--light-blue">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title">
                   Мало <br> 
@@ -152,8 +158,8 @@
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
               </div>
-            </li>
-          </ul>
+            </div>
+          </article>
         </section>
         <section class="search">
           <h3 class="title">
@@ -253,7 +259,7 @@
           <div class="modal__item">
             <label class="modal__item-title" for="in-date">Дата заезда:</label>
             <input class="modal__item-date" type="date" id="in-date" value="2020-04-27" min="2020-04-27" title="Мы не можем отправить вас в прошлое.">
-            <p class="modal__item-date-subtitle modal__item--warning">Мы не можем отправить вас в прошлое.</p>
+            <p class="modal__item-date-subtitle modal__item-date--warning">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="modal__item">
             <label class="modal__item-title" for="out-date">Дата выезда:</label>
@@ -267,9 +273,10 @@
             </div>
             <div class="modal__children-item">
               <label class="modal__family-title">Дети:</label>
-              <p class="modal__family-info">
-                i
-              </p>
+              <div class="modal__family-info">
+                <span class="modal__family-info-icon">i</span>
+                <p class="modal__family-info-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
               <input class="modal__family-number" type="number" value="1">
             </div>
           </div>

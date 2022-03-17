@@ -75,20 +75,23 @@
                   <ul class="catalog-top__form-infra-list">
                     <li class="catalog-top__form-infra-item">
                       <label class="catalog-top__form-infra-word">
-                        <input class="catalog-top__form-infra-checkbox" type="checkbox" name="swimming-pool" checked>
-                        Бассейн
+                        <input class="visually-hidden catalog-top__form-infra-checkbox" type="checkbox" name="swimming-pool" checked>
+                        <span class="catalog-top__form-infra-mark"></span>
+                        <span class="catalog-top__form-infra-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="catalog-top__form-infra-item">
                       <label class="catalog-top__form-infra-word">
-                        <input class="catalog-top__form-infra-checkbox" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="visually-hidden catalog-top__form-infra-checkbox" type="checkbox" name="parking" checked>
+                        <span class="catalog-top__form-infra-mark"></span>
+                        <span class="catalog-top__form-infra-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-top__form-infra-item">
                       <label class="catalog-top__form-infra-word">
-                        <input class="catalog-top__form-infra-checkbox" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                        <input class="visually-hidden catalog-top__form-infra-checkbox" type="checkbox" name="wi-fi">
+                        <span class="catalog-top__form-infra-mark"></span>
+                        <span class="catalog-top__form-infra-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -98,20 +101,23 @@
                   <ul class="catalog-top__form-house-list">
                     <li class="catalog-top__form-house-item">
                       <label class="catalog-top__form-house-word">
-                        <input class="catalog-top__form-house-radio" type="radio" name="house-type" value="hotel" checked>
-                        Гостиница
+                        <input class="visually-hidden catalog-top__form-house-radio" type="radio" name="house-type" value="hotel">
+                        <span class="catalog-top__form-house-mark"></span>
+                        <span class="catalog-top__form-house-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-top__form-house-item">
                       <label class="catalog-top__form-house-word">
-                        <input class="catalog-top__form-house-radio" type="radio" name="house-type" value="motel">
-                        Мотель
+                        <input class="visually-hidden catalog-top__form-house-radio" type="radio" name="house-type" value="motel">
+                        <span class="catalog-top__form-house-mark"></span>
+                        <span class="catalog-top__form-house-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-top__form-house-item">
                       <label class="catalog-top__form-house-word">
-                        <input class="catalog-top__form-house-radio" type="radio" name="house-type" value="apartaments">
-                        Апартаменты
+                        <input class="visually-hidden catalog-top__form-house-radio" type="radio" name="house-type" value="apartaments">
+                        <span class="catalog-top__form-house-mark"></span>
+                        <span class="catalog-top__form-house-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -124,7 +130,16 @@
                     <input class="catalog-top__form-price-min" type="number" value="0">
                     <input class="catalog-top__form-price-max" type="number" value="9000">
                   </p>
-                  <input class="catalog-top__form-price-range" type="range">
+                  <div class="catalog-top__form-price-range">
+                    <div class="catalog-top__form-price-range-inner">
+                      <button class="catalog-top__form-price-range-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="catalog-top__form-price-range-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <p class="ctalog-top__form-buttons">
                   <button class="header__btn catalog-top__form-apply-btn">
