@@ -270,7 +270,19 @@
           <div class="modal__family">
             <div class="modal__adult-item">
               <label class="modal__family-title">Взрослые:</label>
-              <input class="modal__family-number" type="number" value="2">
+              <div class="modal__family-number">
+                <button class="modal__family-number-minus">
+                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>
+                </button>
+                <input class="modal__family-adult" type="number" value="2">
+                <button class="modal__family-number-plus">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>                                       
+                </button>
+              </div>
             </div>
             <div class="modal__children-item">
               <label class="modal__family-title">Дети:</label>
@@ -278,7 +290,19 @@
                 <span class="modal__family-info-icon">i</span>
                 <p class="modal__family-info-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
               </div>
-              <input class="modal__family-number" type="number" value="1">
+              <div class="modal__family-number">
+                <button class="modal__family-number-minus">
+                  <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                  </svg>                    
+                </button>
+                <input class="modal__family-children" type="number" value="1">
+                <button class="modal__family-number-plus">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <button class="modal__button">Найти</button>
