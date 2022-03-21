@@ -349,7 +349,7 @@ img{
 }
 
 .reasons__item-img{
-    height: 100%;
+    display: block;
     object-fit: cover;
 }
 
@@ -409,12 +409,11 @@ img{
 .search__button{
     display: block;
     max-width: 575px;
-    min-height: 60px;
     background: #756257;
     border-radius: 10px;
     margin: 0 auto;
     text-align: center;
-    padding: 14px 10px;
+    padding: 12px 10px;
     font-weight: bold;
     font-size: 20px;
     line-height: 36px;
@@ -791,8 +790,8 @@ img{
     opacity: 0.6;
 }
 
-.catalog-top__form-infra-item:disabled .catalog-top__form-infra-mark,
-.catalog-top__form-house-item:disabled .catalog-top__form-house-mark{
+.catalog-top__form-infra-checkbox:disabled + .catalog-top__form-infra-mark,
+.catalog-top__form-house-radio:disabled + .catalog-top__form-house-mark{
     opacity: 0.4;
 }
 
@@ -1376,6 +1375,7 @@ img{
 }
 
 .modal{
+    display: none;
     position: fixed;
     z-index: 2;
     top: 0;
