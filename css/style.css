@@ -837,8 +837,16 @@ img{
     left: 5px;
 }
 
-.catalog-top__form-infra-checkbox:focus + .catalog-top__form-infra-mark,
+.catalog-top__form-infra-checkbox:focus + .catalog-top__form-infra-mark{
+    outline: 3px solid #83B3D3;
+}
+
 .catalog-top__form-house-radio:focus + .catalog-top__form-house-mark{
+    outline: 3px solid #83B3D3;
+}
+
+.catalog-top__form-house-radio:focus:not(:checked) + .catalog-top__form-house-mark{
+    border-color: #80bdff;
     outline: 3px solid #83B3D3;
 }
 
@@ -996,6 +1004,7 @@ img{
     text-decoration: none;
     line-height: 21px;
     color: #fff;
+    outline: none;
 }
 
 .catalog-top__form-reset-btn{
@@ -1389,6 +1398,7 @@ img{
 
 .subscription--catalog{
     background-image: none;
+    background-color: #fff;
     padding-top: 32px;
     padding-bottom: 142px;
 }
