@@ -105,7 +105,8 @@ img{
     text-transform: uppercase;
     background: #756257;
     min-width: 160px;
-    height: 37px;
+    min-height: 37px;
+    padding: 3px;
     border-radius: 4px;
     transition: 0.2s;
 }
@@ -122,6 +123,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 74px;
 }
 
 .header__menu-inner{
@@ -135,6 +137,7 @@ img{
 
 .header__menu-list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
     font-weight: bold;
@@ -987,6 +990,7 @@ img{
     background-color: #83B3D3;
     transition: 0.2s;
     margin-bottom: 6px;
+    padding: 14px 36px;
 }
 
 .catalog-top__form-apply-btn:hover{
@@ -1187,6 +1191,7 @@ img{
     border: none;
     border-radius: 4px;
     transition: 0.2s;
+    padding: 8px;
 }
 
 .catalog-content__card-btn:hover{
@@ -1263,6 +1268,8 @@ img{
 
 .catalog-content__card-raiting-link{
     display: block;
+    flex-basis: 160px;
+    padding: 4px 24px;
     font-family: PT Sans;
     font-size: 16px;
     line-height: 21px;
