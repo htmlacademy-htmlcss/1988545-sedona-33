@@ -205,6 +205,10 @@ img{
     color: #fff;
 }
 
+.header__btns-favorite:focus-visible{
+    outline: 3px solid #83B3D3;
+}
+
 .header__search-btn,
 .header__favorite-btn{
     transition: 0.2s;
@@ -215,12 +219,8 @@ img{
     fill: #756257;
 }
 
-.header__search-btn:focus-visible,
-.header__favorite-btn:focus-visible{
-    outline: 3px solid #83B3D3;
-}
-
-.header__btns-favorite:focus-visible{
+.header__search-btn:focus,
+.header__favorite-btn:focus{
     outline: 3px solid #83B3D3;
 }
 
@@ -246,10 +246,11 @@ img{
 .welcome{
     margin-top: -9px;
     text-align: center;
-    padding: 51px 0 83px;
+    padding: 51px 0 78px;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
+    background-color: #766458;
 }
 
 .welcome__img{
@@ -257,7 +258,7 @@ img{
 }
 
 .reasons{
-    padding-top: 58px;
+    padding-top: 63px;
 }
 
 .reasons > .title{
@@ -447,11 +448,12 @@ img{
 }
 
 .subscription{
-    padding: 64px 0 93px;
+    padding: 64px 0 94px;
     background-image: url(../images/subscription.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    background-color: #766458;
 }
 
 .subscription .title{
@@ -646,6 +648,7 @@ img{
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    background-color: #766458;
     margin-top: -9px;
     margin-bottom: 19px;
     padding-top: 30px;
@@ -800,6 +803,7 @@ img{
     opacity: 0.6;
 }
 
+
 .catalog-top__form-infra-checkbox:disabled + .catalog-top__form-infra-mark,
 .catalog-top__form-house-radio:disabled + .catalog-top__form-house-mark{
     opacity: 0.4;
@@ -831,6 +835,11 @@ img{
     background-color: #3F5E72;
     top: 5px;
     left: 5px;
+}
+
+.catalog-top__form-infra-checkbox:focus + .catalog-top__form-infra-mark,
+.catalog-top__form-house-radio:focus + .catalog-top__form-house-mark{
+    outline: 3px solid #83B3D3;
 }
 
 .catalog-top__form-inner-pricebtn{
@@ -1254,6 +1263,7 @@ img{
     margin-top: 7px;
     height: 100%;
     width: 100%;
+    outline:none;
 }
 
 .catalog__download{
@@ -1284,12 +1294,18 @@ img{
     background: #68A2CA;
 }
 
-.catalog__download-button:focus-visible{
-    outline: 3px solid #FFFFFF;
+.catalog__download-button:focus{
+    outline: 3px solid #83B3D3;
 }
 
 .catalog__download-button:active{
     color: rgba(255, 255, 255, 0.3);
+}
+
+
+.catalog__download-button:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px lightskyblue;
 }
 
 .catalog__pagination{
